@@ -3,8 +3,15 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-document.getElementById("modal").className="hidden"
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("modal").className="hidden"
+    document.addEventListener('click',function(e){
+      console.log("Let me get some chicken")
+      // if (e.target.innerText==EMPTY_HEART){e.target.innerText=`${FULL_HEART}`}
+      // else{e.target.innerText=`${EMPTY_HEART}`}
+    })
+})
 
 
 //------------------------------------------------------------------------------
